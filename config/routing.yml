@@ -1,0 +1,25 @@
+sf_extranet_dashboard:
+  url: /extranet/:sf_culture/dashboard
+  param: { module: sf_extranet_dashboard, action: index }
+
+sf_extranet_download:
+  url: /extranet/:sf_culture/download/:id
+  param: { module: sf_extranet_dashboard, action: download }
+
+sf_extranet_event:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                sfExtranetEvent
+    module:               sf_extranet_event
+    prefix_path:          /extranet/:sf_culture/event
+    column:               id
+    with_wildcard_routes: true
+
+sf_extranet_document:
+  class: sfPropelORMRouteCollection
+  options:
+    model:                sfExtranetDocument
+    module:               sf_extranet_document
+    prefix_path:          /extranet/:sf_culture/document
+    column:               id
+    with_wildcard_routes: true

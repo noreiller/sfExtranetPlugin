@@ -1,0 +1,31 @@
+# sfExtranetPlugin
+sfExtranetItem:
+  sfExtranetItem_event_1:
+    type: event
+    title: Event 1
+    description: |
+      <p>This is an event example</p>
+    date: 2012-07-13 00:00:00   
+    is_published: true
+
+  sfExtranetItem_event_2:
+    type: event
+    title: Event 2
+    description: |
+      <p>This is another event example</p>
+    date: 2012-09-21 00:00:00   
+    is_published: true
+
+  sfExtranetItem_document_1:
+    type: document
+    title: Document 1
+    category: organization
+    file: foo.doc
+    is_published: true
+
+  sfExtranetItem_document_2:
+    type: document
+    title: Document 2
+    category: organization
+    file: bar.pdf
+    is_published: true

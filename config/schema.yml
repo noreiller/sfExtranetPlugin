@@ -1,0 +1,16 @@
+propel:
+  _attributes:          { package: plugins.sfExtranetPlugin.lib.model }
+
+  sf_extranet_item:
+    _attributes:        { phpName: sfExtranetItem }
+    id:
+    type:               { type: varchar, size: 255 }
+    category:           { type: varchar, size: 255 }
+    title:              { type: varchar, size: 255 }
+    description:        { type: longvarchar }
+    file:               { type: varchar, size: 255 }
+    is_published:       { type: boolean, default: true }
+    date:               { type: timestamp }
+    created_by:         { type: integer, foreignTable: sf_guard_user, foreignReference: id, onDelete: setnull }
+    created_at:         { type: timestamp }
+    updated_at:         { type: timestamp }

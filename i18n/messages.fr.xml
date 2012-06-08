@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>   
+      <trans-unit>
+        <source>Extranet</source>
+        <target>Extranet</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Dashboard</source>
+        <target>Tableau de bord</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Events</source>
+        <target>Événements</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Documents</source>
+        <target>Documents</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Category</source>
+        <target>Catégorie</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Title</source>
+        <target>Titre</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File</source>
+        <target>Fichier</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Is published</source>
+        <target>Publication</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Date</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Created by</source>
+        <target>Auteur</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Created at</source>
+        <target>Date de création</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Updated at</source>
+        <target>Date de mise à jour</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Published by %u on %d</source>
+        <target>Publié par %u le %d</target>
+      </trans-unit>
+      <trans-unit>
+        <source>See all</source>
+        <target>Voir tous</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Download</source>
+        <target>Télécharger</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Download the file</source>
+        <target>Télécharger le fichier</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Informations</source>
+        <target>Informations</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Created by : %s</source>
+        <target>Créé par : %s</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit document "%%title%%"</source>
+        <target>Editer le document "%%title%%"</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit event "%%title%%"</source>
+        <target>Editer l'événement "%%title%%"</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Are you sure?</source>
+        <target>Êtes-vous sûr ?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Extranet events</source>
+        <target>Événements de l'extranet</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Extranet documents</source>
+        <target>Documents de l'extranet</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Extranet dashboard</source>
+        <target>Tableau de bord de l'extranet</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

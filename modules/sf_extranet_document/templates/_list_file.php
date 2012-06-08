@@ -1,0 +1,1 @@
+<?php echo link_to($sfExtranetDocument->getFile(), '@sf_extranet_download?id=' . $sfExtranetDocument->getId()) ?>

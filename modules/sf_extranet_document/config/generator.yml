@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfExtranetItem
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfExtranetDocument
+    plural:                sfExtranetDocuments
+    route_prefix:          sf_extranet_document
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:    
+        created_at: { type: plain }
+        updated_at: { type: plain }
+      list:
+        title: Documents
+        display: [title, category, is_published, updated_at]
+        object_actions:
+          download:   { label: "Download", action: "download" }
+          _edit:      ~
+          _delete:    ~
+      filter:  
+        class: false
+      form:    
+        class:            sfExtranetDocumentForm
+      edit:    
+        title: Edit document "%%title%%"
+      new:     
+        title: New document

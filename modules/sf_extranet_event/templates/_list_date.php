@@ -1,0 +1,1 @@
+<?php echo format_date($sfExtranetEvent->getDate(), 'EEEE dd MMMM yyyy') ?>

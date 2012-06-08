@@ -1,0 +1,30 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfExtranetItem
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfExtranetEvent
+    plural:                sfExtranetEvents
+    route_prefix:          sf_extranet_event
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        list_date: { label: Date }
+        created_at: { type: plain }
+        updated_at: { type: plain }
+      list:    
+        title: Events
+        display: [title, _list_date, description, is_published, updated_at]
+      filter:  
+        class: false
+      form:    
+        class:            sfExtranetEventForm
+      edit:    
+        title: Edit event "%%title%%"
+      new:     
+        title: New event
