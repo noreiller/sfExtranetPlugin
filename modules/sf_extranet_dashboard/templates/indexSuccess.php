@@ -14,13 +14,15 @@
 				<div class="w-row">
 					<h3>
 						<strong><?php echo $item->getTitle() ?></strong>
-						<span>- <?php echo format_date($item->getDate(), 'EEEE dd MMMM yyyy') ?></span>
+						<?php if ($item->getDate()): ?>
+							<span>- <?php echo format_date($item->getDate(), 'EEEE dd MMMM yyyy') ?></span>
+						<?php endif; ?>
 					</h3>
 					<div><?php echo $item->getDescription() ?></div>
-					<p><?php echo __('Published by %u on %d', array(
+					<p><em><?php echo __('Published by %u on %d', array(
 						'%u' => $item->getAuthor(),
 						'%d' => format_date($item->getUpdatedAt(), 'EEEE dd MMMM yyyy')
-					)) ?></p>
+					)) ?></em></p>
 				</div>
 			<? endforeach; ?>
 			<div class="w-row">
@@ -47,14 +49,14 @@
 						<span>- <?php echo $item->getCategory() ?></span>
 					</h3>
 					<p><?php echo link_to(
-						$item->getFile(), 
+						$item->getDownloadFileName(), 
 						'@sf_extranet_download?id=' . $item->getId(), 
 						array('class' => 'download')
 					) ?></p>
-					<p><?php echo __('Published by %u on %d', array(
+					<p><em><?php echo __('Published by %u on %d', array(
 						'%u' => $item->getAuthor(),
 						'%d' => format_date($item->getUpdatedAt(), 'EEEE dd MMMM yyyy')
-					)) ?></p>
+					)) ?></em></p>
 				</div>
 			<? endforeach; ?>
 			<div class="w-row">

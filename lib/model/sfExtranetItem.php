@@ -40,4 +40,12 @@ class sfExtranetItem extends BasesfExtranetItem {
 		return isset($author) ? $author : $anonymous;
 	}
 
+	public function getDownloadFileName()
+	{
+		$info = pathinfo($this->getFile());
+		$ext = $info['extension'];
+
+		return $this->getTitle() . '.' . $ext;
+	}
+
 } // sfExtranetItem
